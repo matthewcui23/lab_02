@@ -44,6 +44,9 @@ need to set the class attribute to `"POSIXct"`
 
 ```{r}
 z <- seq(0, 3600 * 10, by = 3600)
+
+dates <- as.POSIXct(z, origin = "2021-02-01")
+dates
 ```
 
 What do you notice about the date-time? If you are unsure, check out
@@ -66,9 +69,28 @@ Complete the following without using any loops.
 
 1. Subset only the letters from `x`.
 
+```{r}
+nums <- as.character(c(-14:14))
+nums
+
+one <- x[x %in% nums == FALSE]
+one
+```
+
 2. Subset only the negative numbers from `x`.
 
+```{r}
+nums2 <- as.character(c(-14:0))
+
+two <- x[x %in% nums2 == FALSE]
+two
+```
+
 3. Select the numbers divisible by 3 from `x`.
+
+```{r}
+
+```
 
 4. Remove all values with an even index from `x`.
 
